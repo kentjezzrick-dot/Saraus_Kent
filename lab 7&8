@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main () {
+    int numofarr;
+    int currentInput;
+    int largest;
+    char array[100];
+    int length = strlen(array);
+
+    printf("Enter number of elements in the array: ");
+    scanf("%d", &numofarr);
+
+    for (int i = 0; i < numofarr; i++) {
+        printf("Enter %d element\n", i + 1);
+        scanf("%d", &currentInput);
+
+        if (i == 0) {
+            largest = currentInput;
+        }
+        else if (currentInput > largest) {
+            largest = currentInput;
+        }
+}
+        printf("The largest element in the array is: %d\n", largest);
+
+        getchar();
+
+        printf("Enter a string\n");
+        fgets(array, sizeof(array), stdin);
+
+        printf("The number of vowels in the string is: %d\n", length);
+
+        return 0;
+            
+}
